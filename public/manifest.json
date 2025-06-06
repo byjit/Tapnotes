@@ -1,0 +1,23 @@
+{
+	"manifest_version": 3,
+	"name": "Tapnotes",
+	"version": "1.0.0",
+	"description": "chrome extension to build ai agents with gemini nano ai",
+	"action": {
+		"default_title": "Tapnotes"
+	},
+	"permissions": [
+		"storage",
+		"sidePanel"
+	],
+	"side_panel": {
+		"default_path": "sidepanel.html"
+	},
+	"background": {
+		"type": "module",
+		"service_worker": "./assets/background.js"
+	},
+	"host_permissions": [
+		"<all_urls>"
+	]
+}
