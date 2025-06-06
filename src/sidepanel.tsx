@@ -68,11 +68,7 @@ const SidePanel: React.FC = () => {
 
 	return (
 		<div className="side-panel py-6">
-			{blocks ? (
-				<BlockNoteComponent blocks={blocks} />
-			) : (
-				<p>No data found. Please add some content.</p>
-			)}
+			<BlockNoteComponent blocks={blocks ?? []} />
 		</div>
 	);
 
