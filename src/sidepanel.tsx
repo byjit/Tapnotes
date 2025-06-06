@@ -8,9 +8,9 @@ import { useCreateBlockNote } from "@blocknote/react";
 import { Block } from "@blocknote/core";
 
 
-const BlockNoteComponent: React.FC<{ blocks: Block[] }> = ({ blocks }) => {
+const BlockNoteComponent: React.FC<{ blocks?: Block[] }> = ({ blocks }) => {
 	const editor = useCreateBlockNote({
-		initialContent: blocks,
+		initialContent: blocks ?? undefined,
 	});
 
 	const setStorage = async (key: string, data: any) => {
@@ -68,7 +68,7 @@ const SidePanel: React.FC = () => {
 
 	return (
 		<div className="side-panel py-6">
-			<BlockNoteComponent blocks={blocks ?? []} />
+			<BlockNoteComponent blocks={blocks} />
 		</div>
 	);
 
