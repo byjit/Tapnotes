@@ -1,6 +1,6 @@
-# Nano AI agent builder Introduction
+# Tapnotes
 
-Create workflows inside your chrome extension that works on top of chrome's built-in AI. And automate your tasks at 0 cost, with offline capabilities and complete local processing!
+A Chrome extension that allows you to take notes on any webpage. It provides a simple interface to jot down thoughts, ideas, or important information while browsing the web.
 
 
 ## Getting Started
@@ -8,16 +8,6 @@ Create workflows inside your chrome extension that works on top of chrome's buil
 ### Prerequisites
 
 Make sure you have [Node.js](https://nodejs.org/) (version 18+ or 20+) installed on your machine.
-
-## 🏗️ Development
-
-To start the development server:
-
-```sh
-npm run dev
-```
-
-This will start the Vite development server and open your default browser.
 
 ## 📦 Build 
 
